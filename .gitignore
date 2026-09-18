@@ -1,0 +1,18 @@
+# IDE
+.idea/
+.vscode/
+
+# Build
+build/
+out/
+target/
+
+# Environment / secrets
+.env
+.env.*
+*.key
+*.pem
+
+# OS
+.DS_Store
+Thumbs.db
