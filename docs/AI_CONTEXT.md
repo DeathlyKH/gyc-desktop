@@ -18,22 +18,20 @@ Goal:
 ## Current Architecture
 
 Windows 11
-↓
-WSL2 Ubuntu 26.04
-↓
-开发 / Git / 编译
-
-独立 minimal Linux VM
-↓
-目标运行环境 / 图形系统实验环境
+├─ WSL2 Ubuntu 26.04
+│  └─ 开发 / Git / 编译
+└─ VMware Workstation Pro 26H1u1
+   └─ 独立 minimal Linux VM
+      └─ 目标运行环境 / 图形系统实验环境
 
 ## Current State
 
 WSL 已完成并可正常使用。
+VM 平台已确定并验证为 VMware Workstation Pro 26H1u1。
 
 当前正在进行：
 
-Phase 1 — 创建 minimal Linux VM。
+Phase 1 — 选择 initial minimal Linux distribution，并创建 GYC Linux Lab VM。
 
 ## Important Rules
 
@@ -47,7 +45,6 @@ Phase 1 — 创建 minimal Linux VM。
 
 ## Major TBDs
 
-- VM 平台
 - VM 基础 Linux 发行版最终选择
 - compositor 架构
 - 是否自行实现 compositor

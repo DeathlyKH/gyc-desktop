@@ -72,6 +72,32 @@ Note:
 - `cl.exe` is not expected to be available in a normal PowerShell session.
 - The MSVC environment is activated through Visual Studio developer environment scripts such as `VsDevCmd.bat`.
 
+## Windows Virtualization Environment
+
+### VMware Workstation Pro
+
+Installation:
+- VMware Workstation Pro 26H1u1 for Windows
+- Version: 26.0.1.25688693
+- Build: 25688693
+
+Validation:
+- VMware starts normally after a Windows host reboot
+- VMware Authorization Service is running
+- VMware DHCP Service is running
+- VMware NAT Service is running
+- VMware USB Arbitration Service is running
+- VMware Network Adapter VMnet1 is up
+- VMware Network Adapter VMnet8 is up
+- Windows hypervisor remains present (`HypervisorPresent: True`)
+- WSL2 Ubuntu 26.04 remains operational
+- WSL systemd remains `running`
+- A temporary Linux smoke-test VM successfully reached virtual firmware and Intel E1000E network boot / DHCP
+
+Important:
+- VMware Workstation Pro is the accepted virtualization platform for GYC Linux Lab.
+- This decision does not determine the final base Linux distribution.
+
 ## WSL Development Environment
 
 Distribution:
@@ -123,7 +149,7 @@ Status:
 - Not created yet
 
 Current plan:
-- Independent minimal Linux virtual machine
+- Independent minimal Linux virtual machine hosted by VMware Workstation Pro 26H1u1
 - No desktop environment initially
 - Intended storage location: E: drive
 - Used as the GYC Desktop target runtime and graphics-system laboratory
@@ -142,7 +168,6 @@ Planned responsibilities:
 Installed software must not be treated as an architecture decision.
 
 Still TBD:
-- VM platform
 - Final base Linux distribution
 - Main implementation language
 - UI toolkit

@@ -12,6 +12,7 @@ Development Environment
 - 项目源码优先存放于 Linux 文件系统中
 
 Target Environment
+- 虚拟化平台：VMware Workstation Pro 26H1u1 for Windows（Accepted，见 ADR-002）
 - 独立 minimal Linux 虚拟机
 - 初步倾向 Ubuntu Server 26.04 LTS
 - 默认不安装桌面环境

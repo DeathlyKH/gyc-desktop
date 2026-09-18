@@ -81,3 +81,38 @@ Decision discipline：
 - Existing Qt installation is recorded as an available development asset
 - Qt is NOT considered selected for GYC Desktop
 - Main language, UI toolkit, compositor architecture and VM platform remain TBD
+
+### VMware Workstation platform selection and validation
+
+安装：
+- VMware Workstation Pro 26H1u1 for Windows
+- Version 26.0.1.25688693
+- Build 25688693
+- 安装包来自 Broadcom 官方下载站
+
+Host reboot：
+- VMware 安装完成后已重新启动 Windows
+
+验证：
+- VMware Authorization Service running
+- VMware DHCP Service running
+- VMware NAT Service running
+- VMware USB Arbitration Service running
+- VMware Network Adapter VMnet1 up
+- VMware Network Adapter VMnet8 up
+- Windows hypervisor remained present
+- WSL2 Ubuntu 26.04 remained operational
+- WSL systemd returned `running`
+
+Smoke test：
+- 创建临时 `VMware Smoke Test` Linux VM
+- VM 位于 E: 盘
+- 未安装 guest operating system
+- 虚拟机成功启动
+- 虚拟固件正常执行
+- Intel E1000E virtual NIC 成功进入 network boot / DHCP
+
+Decision：
+- VMware Workstation Pro 已验证可用于当前 Windows 11 + WSL2 开发架构
+- VM platform 正式确定为 VMware Workstation Pro
+- 下一步进入 initial minimal Linux distribution 选型
