@@ -96,7 +96,7 @@ Validation:
 
 Important:
 - VMware Workstation Pro is the accepted virtualization platform for GYC Linux Lab.
-- This decision does not determine the final base Linux distribution.
+- This decision does not determine the UI toolkit, compositor architecture, or implementation language.
 
 ## WSL Development Environment
 
@@ -150,6 +150,7 @@ Status:
 
 Current plan:
 - Independent minimal Linux virtual machine hosted by VMware Workstation Pro 26H1u1
+- Initial target distribution: Arch Linux
 - No desktop environment initially
 - Intended storage location: E: drive
 - Used as the GYC Desktop target runtime and graphics-system laboratory
@@ -168,7 +169,6 @@ Planned responsibilities:
 Installed software must not be treated as an architecture decision.
 
 Still TBD:
-- Final base Linux distribution
 - Main implementation language
 - UI toolkit
 - Compositor architecture

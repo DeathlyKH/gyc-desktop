@@ -11,10 +11,12 @@ Development Environment
 - systemd enabled
 - 项目源码优先存放于 Linux 文件系统中
 
+Virtualization Platform
+- VMware Workstation Pro 26H1u1 for Windows（Accepted，见 ADR-002）
+
 Target Environment
-- 虚拟化平台：VMware Workstation Pro 26H1u1 for Windows（Accepted，见 ADR-002）
 - 独立 minimal Linux 虚拟机
-- 初步倾向 Ubuntu Server 26.04 LTS
+- 初始目标发行版：Arch Linux（Accepted，见 ADR-003）
 - 默认不安装桌面环境
 - 用作 GYC Desktop 的实际运行与破坏性实验环境
 
@@ -45,6 +47,5 @@ VM：
 - display manager
 - shell 架构
 - 是否自行实现 compositor
-- 最终基础发行版
 
 所有这些需要后续单独做技术选型。

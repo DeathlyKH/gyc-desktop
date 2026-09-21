@@ -16,7 +16,7 @@
 ## Phase 1 — Minimal Linux Target
 
 - [x] Choose virtualization platform
-- [ ] Choose initial minimal Linux distribution
+- [x] Choose initial minimal Linux distribution
 - [ ] Create GYC Linux Lab VM
 - [ ] Install minimal Linux without desktop environment
 - [ ] Verify networking

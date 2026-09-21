@@ -21,17 +21,19 @@ Windows 11
 ├─ WSL2 Ubuntu 26.04
 │  └─ 开发 / Git / 编译
 └─ VMware Workstation Pro 26H1u1
-   └─ 独立 minimal Linux VM
+   └─ Arch Linux minimal VM
       └─ 目标运行环境 / 图形系统实验环境
 
 ## Current State
 
 WSL 已完成并可正常使用。
 VM 平台已确定并验证为 VMware Workstation Pro 26H1u1。
+初始目标发行版已确定为 Arch Linux。
+Ubuntu Server 26.04 保留为备用方案。
 
 当前正在进行：
 
-Phase 1 — 选择 initial minimal Linux distribution，并创建 GYC Linux Lab VM。
+Phase 1 — 创建 GYC Linux Lab VM，并安装 minimal Arch Linux。
 
 ## Important Rules
 
@@ -45,7 +47,6 @@ Phase 1 — 选择 initial minimal Linux distribution，并创建 GYC Linux Lab 
 
 ## Major TBDs
 
-- VM 基础 Linux 发行版最终选择
 - compositor 架构
 - 是否自行实现 compositor
 - UI toolkit

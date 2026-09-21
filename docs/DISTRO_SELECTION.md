@@ -20,7 +20,6 @@ GYC Desktop 的目标不是寻找一个日常使用的 Linux 桌面系统，而�
 - compositor
 - desktop shell
 
-
 ## Evaluation Criteria
 
 发行版选择主要考虑：
@@ -60,15 +59,13 @@ GYC Desktop 的目标不是寻找一个日常使用的 Linux 桌面系统，而�
 
 需要能够支持长期实验和迭代。
 
-
 # Candidates
-
 
 ## Arch Linux
 
 Status:
-- Candidate
-- Current preference
+- Accepted
+- Selected as the initial GYC Linux Lab distribution
 
 Advantages:
 
@@ -84,6 +81,10 @@ Potential issues:
 - 初期配置工作量较大
 - 可能花费较多时间处理系统维护问题
 
+Decision notes:
+
+- 符合当前“从基础系统逐步搭建 graphics stack / Wayland / compositor”的目标
+- 适合作为第一代实验系统
 
 ## Ubuntu Server 26.04 LTS
 
@@ -103,11 +104,16 @@ Potential issues:
 - 默认配置较多
 - 部分底层细节被发行版封装
 
+Decision notes:
+
+- 作为备用方案保留
+- 若 Arch 路线出现不可接受问题，可切换至 Ubuntu Server 26.04 LTS
 
 ## Debian 13
 
 Status:
-- Candidate
+- Considered
+- Not selected for the initial phase
 
 Advantages:
 
@@ -120,14 +126,20 @@ Potential issues:
 - 软件版本相对保守
 - 最新图形栈组件可能需要额外处理
 
+Decision notes:
 
-# Current Direction
+- 具备学习价值
+- 但当前阶段未作为初始目标系统
 
-当前倾向：
+# Final Decision
 
-Arch Linux
+Selected initial distribution:
+- Arch Linux
 
-原因：
+Backup option:
+- Ubuntu Server 26.04 LTS
+
+Reason summary:
 
 GYC Desktop 第一阶段重点是学习 Linux 图形系统内部结构，
 而不是快速获得一个完整桌面环境。
@@ -142,11 +154,3 @@ Linux
 → desktop shell
 
 的学习路线。
-
-
-# Decision Status
-
-No final decision has been made.
-
-Before creating the official GYC Linux Lab VM, the final distribution choice should be reviewed and recorded as an Architecture Decision Record (ADR).
-

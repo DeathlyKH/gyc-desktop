@@ -115,4 +115,17 @@ Smoke test：
 Decision：
 - VMware Workstation Pro 已验证可用于当前 Windows 11 + WSL2 开发架构
 - VM platform 正式确定为 VMware Workstation Pro
-- 下一步进入 initial minimal Linux distribution 选型
+
+### Initial Linux distribution selection
+
+过程：
+- 创建 `docs/DISTRO_SELECTION.md`
+- 对 Arch Linux、Ubuntu Server 26.04 LTS、Debian 13 进行候选分析
+
+结果：
+- Arch Linux 被选定为 GYC Linux Lab 的初始基础发行版
+- Ubuntu Server 26.04 LTS 保留为备用方案
+
+说明：
+- 此决策用于第一代 GYC Linux Lab
+- 后续如果 Arch 路线出现不可接受阻碍，可重新评估备用方案
