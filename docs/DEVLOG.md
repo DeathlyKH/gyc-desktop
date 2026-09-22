@@ -129,3 +129,47 @@ Decision：
 说明：
 - 此决策用于第一代 GYC Linux Lab
 - 后续如果 Arch 路线出现不可接受阻碍，可重新评估备用方案
+
+## 2026-09-21
+
+### GYC Linux Lab Phase 1: Arch Linux base installation completed
+
+VM environment:
+- VMware Workstation Pro
+- VM name: `GYC Linux Lab`
+- Firmware: UEFI
+- Network: NAT
+
+Arch installation:
+- Completed manual Arch Linux installation
+- GPT partition table created
+- EFI System Partition created (`/boot`)
+- Root filesystem created with ext4
+- Base system installed with `pacstrap`
+- Generated `/etc/fstab`
+
+System configuration:
+- Configured timezone: `Asia/Shanghai`
+- Configured locale: `en_US.UTF-8`
+- Configured hostname: `gyc-linux-lab`
+- Configured `/etc/hosts`
+
+Boot:
+- Installed `systemd-boot`
+- Created loader configuration
+- Created Arch Linux boot entry
+- Verified successful boot from virtual disk
+- Verified UEFI boot and kernel loading
+
+Network and system services:
+- Installed and enabled NetworkManager
+
+User environment:
+- Configured root password
+- Installed sudo
+- Enabled wheel group sudo access
+- Created regular user environment
+
+Milestone result:
+- GYC Linux Lab is now a functional minimal Arch Linux VM
+- Base system is ready for further development environment setup
