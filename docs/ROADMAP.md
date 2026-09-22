@@ -17,10 +17,10 @@
 
 - [x] Choose virtualization platform
 - [x] Choose initial minimal Linux distribution
-- [ ] Create GYC Linux Lab VM
-- [ ] Install minimal Linux without desktop environment
-- [ ] Verify networking
-- [ ] Configure SSH
+- [x] Create GYC Linux Lab VM
+- [x] Install minimal Linux without desktop environment
+- [x] Verify networking
+- [x] Configure SSH
 - [ ] Establish deployment path from WSL → VM
 - [ ] Create first VM snapshot
 
