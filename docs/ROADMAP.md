@@ -21,8 +21,8 @@
 - [x] Install minimal Linux without desktop environment
 - [x] Verify networking
 - [x] Configure SSH
-- [ ] Establish deployment path from WSL → VM
-- [ ] Create first VM snapshot
+- [x] Establish deployment path from WSL → VM
+- [x] Create first VM snapshot
 
 ## Phase 2 — Linux Graphics Foundations
 

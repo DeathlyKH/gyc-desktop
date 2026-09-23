@@ -227,3 +227,37 @@ Mesa
 Wayland
  ↓
 Compositor exploration
+
+### VMware Snapshot
+
+Created first VM snapshot:
+
+Snapshot:
+- GYC Linux Lab - Phase1 Base
+
+Purpose:
+- Preserve stable minimal Linux development environment
+- Allow rollback before graphics stack experiments
+
+Phase 1 environment baseline is now frozen.
+
+### Development workflow migration
+
+Migrated primary Linux development workflow:
+
+Before:
+WSL local development
+
+After:
+VS Code Remote SSH → GYC Linux Lab VM
+
+Current workflow:
+Windows
+ |
+VS Code
+ |
+SSH
+ |
+Arch Linux VM
+
+WSL remains as host-side tooling environment.
