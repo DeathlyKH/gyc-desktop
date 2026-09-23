@@ -300,3 +300,36 @@ The Linux graphics pipeline has been validated from kernel DRM layer to Wayland 
 Further work:
 - Investigate VMware DRM backend compatibility.
 - Validate compositor behavior using controlled backends.
+
+## 2026-09-23
+
+### Phase 2.2 — Weston DRM Backend Validation Completed
+
+Completed Linux graphics stack validation.
+
+Verified components:
+
+- VMware SVGA II virtual GPU
+- vmwgfx DRM driver
+- Mesa userspace graphics stack
+- libdrm
+- Wayland protocol stack
+- Weston compositor
+
+Tests completed:
+
+[x] Weston headless backend
+[x] Weston DRM backend
+[x] Weston desktop shell
+[x] Weston terminal client
+
+Result:
+
+The minimal Arch Linux environment can successfully start a Wayland compositor on VMware DRM backend.
+
+Initial compositor freeze issue was not reproduced.
+The issue was likely related to creating a VMware snapshot while a DRM compositor session was active.
+
+New baseline snapshot created:
+
+GYC-Phase2.2-Weston-DRM-Milestone
