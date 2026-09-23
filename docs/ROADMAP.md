@@ -37,6 +37,8 @@ Completed:
 [x] Weston first graphical output
 
 Next:
+[ ] Investigate VMware DRM backend stability
+[ ] Validate Weston with alternative backends
 [ ] Understand Wayland client/compositor architecture
 [ ] Create minimal Wayland client
 [ ] Experiment with custom compositor framework

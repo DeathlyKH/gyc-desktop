@@ -287,9 +287,16 @@ Completed:
 - Installed Mesa userspace drivers
 - Installed Wayland components
 - Verified user access to video group
-- Successfully launched Weston compositor
+- Successfully launched Weston compositor using the DRM backend.
+
+Observed:
+- Weston successfully initialized the graphical stack.
+- Display output was produced through VMware SVGA II / vmwgfx.
+- The DRM backend caused display/input freezing after takeover, requiring further investigation.
 
 Result:
-A minimal Wayland graphical session is now running.
+The Linux graphics pipeline has been validated from kernel DRM layer to Wayland compositor layer.
 
-This confirms the feasibility of building GYC Desktop on top of Linux graphics infrastructure.
+Further work:
+- Investigate VMware DRM backend compatibility.
+- Validate compositor behavior using controlled backends.
