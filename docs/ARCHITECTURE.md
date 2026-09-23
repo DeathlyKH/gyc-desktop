@@ -49,3 +49,26 @@ VM：
 - 是否自行实现 compositor
 
 所有这些需要后续单独做技术选型。
+
+## Current Graphics Stack
+
+Current verified stack:
+
+Application
+    |
+Wayland Client
+    |
+Weston Compositor
+    |
+Wayland Protocol
+    |
+Mesa
+    |
+DRM/KMS
+    |
+vmwgfx Kernel Driver
+    |
+VMware SVGA II Adapter
+
+
+This stack is the foundation for future GYC Desktop compositor development.

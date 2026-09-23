@@ -173,3 +173,21 @@ Still TBD:
 - UI toolkit
 - Compositor architecture
 - Whether the compositor will eventually be implemented in-house
+
+## Graphics Environment:
+
+- GPU:
+VMware SVGA II Adapter
+
+- Kernel Module:
+vmwgfx
+
+- Graphics Devices:
+ /dev/dri/card0
+ /dev/dri/renderD128
+
+- Compositor:
+Weston 15.0.1
+
+- Display Protocol:
+Wayland
